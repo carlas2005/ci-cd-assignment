@@ -1,0 +1,62 @@
+name: CD
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deliver-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build Windows .exe
+        run: |
+          pyinstaller --onefile src/pt_calc.py --windowed
+
+      - name: Deliver Windows artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: pt_calc-windows
+          path: dist/pt_calc.exe
+
+  deliver-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build Linux binary
+        run: |
+          pyinstaller --onefile src/pt_calc.py --distpath dist
+
+      - name: Deliver Linux artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: pt_calc-linux
+          path: dist/pt_calc
