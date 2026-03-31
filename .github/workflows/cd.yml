@@ -28,7 +28,7 @@ jobs:
           pyinstaller --onefile src/pt_calc.py --windowed
 
       - name: Deliver Windows artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: pt_calc-windows
           path: dist/pt_calc.exe
@@ -56,7 +56,7 @@ jobs:
           pyinstaller --onefile src/pt_calc.py --distpath dist
 
       - name: Deliver Linux artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: pt_calc-linux
           path: dist/pt_calc
