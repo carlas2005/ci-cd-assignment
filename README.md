@@ -4,7 +4,7 @@ A simple Python Tkinter app that calculates how long it will take to reach a tar
 A small project to demonstrate CI/CD workflows.
 
 ## Features
-Input: Current points, needed points, and recharge time per point
+Input: Current points, needed points, and recharge time per point  
 Outputs:
 - Hours and minutes needed to reach target
 - Estimated time the points will be charged
@@ -27,7 +27,18 @@ You can download the executables that are obtained as artifacts from the **CD wo
 - Windows: Executbale .exe
 - Linux: Binary
 
-## Testing 
+You can also create your own executable with the next command:
+Windows
+```py
+pyinstaller --clean --noconfirm --onefile --windowed --icon=assets/icon.ico --name=pt_calc src/pt_calc.py
+```
+
+Linux
+```py
+pyinstaller --clean --noconfirm --onefile --windowed --name=pt_calc src/pt_calc.py
+```
+
+- ## Testing 
 Run tests locally from the main directory:
 ```py
 python -m pytest

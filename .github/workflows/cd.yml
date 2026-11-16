@@ -25,7 +25,7 @@ jobs:
 
       - name: Build Windows .exe
         run: |
-          pyinstaller --onefile src/pt_calc.py --windowed
+          pyinstaller --clean --noconfirm --onefile --windowed --icon=assets/icon.ico --name=pt_calc src/pt_calc.py
 
       - name: Deliver Windows artifact
         uses: actions/upload-artifact@v4
@@ -53,7 +53,7 @@ jobs:
 
       - name: Build Linux binary
         run: |
-          pyinstaller --onefile src/pt_calc.py --distpath dist
+          pyinstaller --clean --noconfirm --onefile --windowed --name=pt_calc src/pt_calc.py
 
       - name: Deliver Linux artifact
         uses: actions/upload-artifact@v4
