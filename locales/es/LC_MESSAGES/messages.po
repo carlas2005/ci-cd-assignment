@@ -1,0 +1,53 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-16 18:37+0100\n"
+"PO-Revision-Date: 2026-11-16 18:37+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: src/pt_calc.py:29
+#, python-format
+msgid ""
+"You'll have to wait %(hours)d hours and %(minutes)d minutes. Your points "
+"will be charged at %(time)s"
+msgstr ""
+"Tendrás que esperar %(hours)d horas y %(minutes)d minutos. Tus puntos "
+"se recargarán a las %(time)s"
+
+#: src/pt_calc.py:38
+msgid "Input not valid. Please enter numeric values."
+msgstr "Entrada no válida. Por favor, introduzca un valor numérico"
+
+#: src/pt_calc.py:43
+msgid "Point Time Calculator"
+msgstr "Calculadora de tiempo de puntos"
+
+#: src/pt_calc.py:45
+msgid "Your current Points:"
+msgstr "Tus puntos actuales:"
+
+#: src/pt_calc.py:46
+msgid "Your needed Points:"
+msgstr "Tus puntos necesarios:"
+
+#: src/pt_calc.py:47
+msgid "Recharge time for one point (in minutes):"
+msgstr "Tiempo de carga por punto (en minutos):"
+
+#: src/pt_calc.py:57
+msgid "Calculate"
+msgstr "Calcular"
+

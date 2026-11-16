@@ -1,0 +1,50 @@
+# Translations template for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-11-16 18:37+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: src/pt_calc.py:29
+#, python-format
+msgid ""
+"You'll have to wait %(hours)d hours and %(minutes)d minutes. Your points "
+"will be charged at %(time)s"
+msgstr ""
+
+#: src/pt_calc.py:38
+msgid "Input not valid. Please enter numeric values."
+msgstr ""
+
+#: src/pt_calc.py:43
+msgid "Point Time Calculator"
+msgstr ""
+
+#: src/pt_calc.py:45
+msgid "Your current Points:"
+msgstr ""
+
+#: src/pt_calc.py:46
+msgid "Your needed Points:"
+msgstr ""
+
+#: src/pt_calc.py:47
+msgid "Recharge time for one point (in minutes):"
+msgstr ""
+
+#: src/pt_calc.py:57
+msgid "Calculate"
+msgstr ""
+
